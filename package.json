@@ -3,11 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.15",
+    "@mdx-js/mdx": "^1.1.6",
+    "@mdx-js/tag": "^0.20.3",
     "grommet": "^2.7.4",
+    "grommet-icons": "^4.2.0",
+    "navi": "^0.13.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-google-invisible-recaptcha": "^0.2.11",
     "react-navi": "^0.13.5",
     "react-scripts": "3.0.1",
+    "react-spinners": "^0.5.13",
     "styled-components": "^4.3.2"
   },
   "scripts": {

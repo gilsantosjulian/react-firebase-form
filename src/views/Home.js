@@ -2,7 +2,7 @@
 import { Box } from "grommet";
 
 import Footer from "../components/generics/Footer.jsx";
-// // import Layer from "../specifics/Layer.jsx";
+import RegisterForm from "../components/specifics/RegisterForm.jsx";
 // // import Toolbar from "../components/generics/Toolbar.jsx";
 
 // export default () => {
@@ -22,7 +22,7 @@ function Home() {
     <Box>
       <Box height="xsmall" />
       {/* <Toolbar withButton /> */}
-      {/* <Layer visibility={true} /> */}
+      <RegisterForm visibility={true} />
       <Footer />{" "}
     </Box>
   );
