@@ -1,32 +1,31 @@
-import React from 'react';
-import { View, NotFoundBoundary, useLoadingRoute } from 'react-navi';
-import { MDXProvider } from '@mdx-js/tag';
-import { Grommet } from 'grommet';
+import React from "react";
+import { View, NotFoundBoundary, useLoadingRoute } from "react-navi";
+import { Grommet } from "grommet";
 
-import theme from 'config/theme';
-import NotFound from 'views/public/NotFound.mdx';
-import HorizontalSpinner from 'components/generics/HorizontalSpinner.jsx';
-import Splash from 'components/generics/Splash.jsx';
+import theme from "../../config/theme";
+import NotFound from "../../views/NotFound.mdx";
+import { MDXProvider } from "@mdx-js/tag";
+import HorizontalSpinner from "../generics/HorizontalSpinner";
+import Splash from "../generics/Splash.jsx";
 
 const styles = {
   container: {
-    overflowX: 'hidden',
-  },
+    overflowX: "hidden"
+  }
 };
 
 export default () => {
-  let loadingRoute = useLoadingRoute()
+  let loadingRoute = useLoadingRoute();
 
   return (
     <Grommet theme={theme} full style={styles.container}>
       <Splash />
-      <NotFoundBoundary render={() => <NotFound/>}>
-        <HorizontalSpinner visibility={loadingRoute}/>
+      <NotFoundBoundary render={() => <NotFound />}>
+        <HorizontalSpinner visibility={loadingRoute} />
         <MDXProvider>
           <View />
         </MDXProvider>
       </NotFoundBoundary>
     </Grommet>
   );
-}
-
+};
